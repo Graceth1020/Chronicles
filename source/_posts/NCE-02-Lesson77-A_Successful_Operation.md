@@ -1,12 +1,6 @@
-| title    | NCE 02: Lesson 77 A Successful Operation |
-| -------- | ---------------------------------------- |
-| date     | 2026-04-11 22:40:10 -0700                |
-| tags     | NCE02                                    |
-| category | Composition                              |
-
-# NCE 02: Lesson 77 A Successful Operation
-
-Here is the answer following your requested template.
+---
+title:NCE 02: Lesson 77 A Successful Operation
+---
 
 ## ordinary version:
 
