@@ -1,0 +1,30 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - redefine-github-actions # 确保这是你的源码分支名
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # 保持不变
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # 必须是 setup-node
+        with:
+          node-version: '20'
+          cache: 'npm' # 开启缓存，让下次部署更快
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build # 相当于 hexo generate
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: public # Hexo 生成的静态文件目录
+          branch: redefine-github-actions # 部署到这个分支
