@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4 # 必须是 setup-node
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm' # 开启缓存，让下次部署更快
       - name: Install Dependencies
         run: npm install
