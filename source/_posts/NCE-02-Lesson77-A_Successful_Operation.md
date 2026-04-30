@@ -70,21 +70,3 @@ However, an official announcement was **issued by** the museum: the mummy **has 
 | breathe a sigh of relief                  | feel relief after a period of worry         |
 | hope that someone would achieve something | express a wish for someone's future success |
 | achieve their goal                        | successfully reach an aim                   |
-
-| Common Phrase            | Meaning                                 |
-| ------------------------ | --------------------------------------- |
-| dug up                   | unearthed / excavated from the ground   |
-| disappeared from         | was missing from (a place)              |
-| unverified news          | information not confirmed to be true    |
-| regain its life          | come back to life                       |
-| run away                 | escape / flee                           |
-| told one by one          | narrated in sequence                    |
-| become alarmed by        | become frightened or worried because of |
-| eat someone to recover   | consume someone in order to heal        |
-| official announcement    | formal public statement                 |
-| issued by                | released / published by                 |
-| be back in its place     | return to its original location         |
-| came in time             | arrived at the right moment             |
-| feel relieved            | stop feeling worried                    |
-| breathe a sigh of relief | feel relief after a period of worry     |
-| achieve their goal       | successfully reach an aim               |
