@@ -1,6 +1,6 @@
 ---
 title: NCE-02 Lesson 76 April fool's day
-date: 2026-04-14 21:32:05
+date: 2026-04-12 21:32:05
 tags:
     - "NCE 02"
     - "English"
