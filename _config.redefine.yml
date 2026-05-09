@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://cdn.jsdelivr.net/gh/Graceth1020/img-host@main/Chronicle/dog-icon.svg
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://cdn.jsdelivr.net/gh/Graceth1020/img-host@main/Chronicle/head.jpeg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -134,7 +134,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: Have a nice day.
   # Home banner subtitle
   subtitle:
     text: [] # subtitle text, array
