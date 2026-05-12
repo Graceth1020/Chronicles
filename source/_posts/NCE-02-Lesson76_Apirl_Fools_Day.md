@@ -8,8 +8,6 @@ thumbnail: https://evan.beee.top/img/redefine-1-final.webp
 sticky: 999
 ---
 
-Here is the corrected version of your paragraph following the same template.
-
 ## ordinary version:
 
 The harvest is over, the exciting macaroni-eating contest is taking place. The appearance of six competitors catches our attention. They are all overweight except for one young man who is thin but strong. The host introduced their past achievements. After that, a huge quantity of macaroni is prepared, weighed and served. Every competitor sits in front of a table, ready for the contest. Not only quantity but also speed is important. The competitors have been eating for three hours. In the end, only one man remains. Yes, it's the young man – thinner than anyone else. To our surprise, he asks for more. It seems he hasn't eaten for a long time.
