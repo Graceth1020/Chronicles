@@ -1,6 +1,6 @@
 ---
-title: NCE-02 Lesson 84 On strike
-date: 2026-05-16 20:32:05
+title: NCE-02 Preposition 'For' Practice
+date: 2026-05-16 21:32:05
 tags:
     - "NCE 02"
     - "English"
