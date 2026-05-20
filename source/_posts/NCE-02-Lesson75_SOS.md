@@ -1,5 +1,5 @@
 ---
-title: NCE-02 Lesson 76 April fool's day
+title: NCE-02 Lesson 75 SOS
 date: 2026-04-11 21:32:05
 tags:
     - "NCE 02"
