@@ -9,15 +9,6 @@ thumbnail: https://evan.beee.top/img/redefine-1-final.webp
 sticky: 999
 ---
 
-### 1、Examples
-- angry with sb./at sth.(因某人或某事生气): She was angry with her colleague who forgot to send the important email, and also angry at the delay of the project.
-- busy with/at(忙于……): The manager is busy with the daily affairs of the company and busy at preparing for the upcoming meeting.
-- consistent with(与……一致): The result of the survey is consistent with the data we collected last month.
-- content with(对……满足): He is content with the simple life that he has lived in the small village for years.
-- familiar with/to(与……熟悉): I am familiar with the rules of this game, and these rules are familiar to all the players.
-- patient with(有耐心): Teachers should be patient with students who learn knowledge slowly.
-- popular with(为……所喜爱): This kind of traditional snack is popular with both local people and tourists.
-
 # 1、Examples
 - away from(距……远的): The new school is far away from my home, so I have to get up early every morning.
 - different from(与……不同的): The lifestyle in the city is quite different from that in the countryside.
