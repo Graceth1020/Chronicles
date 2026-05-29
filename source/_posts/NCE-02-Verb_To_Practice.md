@@ -1,5 +1,5 @@
 ---
-title: NCE-02 Verb 'With' Practice
+title: NCE-02 Verb 'To' Practice
 date: 2026-05-28 22:32:05
 tags:
     - "NCE 02"
@@ -41,8 +41,101 @@ sticky: 999
 
 ---
 
-### 2、Exercises
-#### 2.1
+### 2. To + Doing (Preposition) & To + Do (Infinitive)
+#### 2.1 To + Doing (to is a preposition + gerund)
+1. **accustomed to doing**
+
+   After living abroad for years, he has become accustomed to communicating with people from different cultural backgrounds.
+2. **be used to doing**
+
+   Most professional athletes are used to following a strict daily training schedule all year round.
+3. **confess to doing**
+
+   The young boy finally confessed to hiding his mother’s mobile phone on purpose.
+4. **object to doing**
+
+   Many local residents object to building a noisy factory near their residential area.
+5. **look forward to doing**
+
+   All the students look forward to taking part in the outdoor activity organized by their teacher next week.
+6. **pay attention to doing**
+
+   When you write a formal essay, you need to pay attention to using accurate words and logical sentences.
+7. **stick to doing**
+
+   If you want to make progress in English, you must stick to reading English articles every single day.
+8. **lead to doing**
+
+   Long-term lack of sleep will lead to feeling tired and unable to focus on work or study.
+9. **contribute to doing**
+
+   Regular exercise and a balanced diet contribute to maintaining a healthy body and a positive mood.
+10. **admit to doing**
+
+    The student admitted to copying others’ homework when the teacher asked him seriously.
+11. **devote oneself to doing**
+
+    The elderly professor devoted himself to researching traditional folk culture throughout his lifetime.
+12. **dedicate to doing**
+
+    This public welfare organization dedicates all its energy to helping homeless children in remote areas.
+13. **take to doing**
+
+    After he retired, he took to growing flowers and vegetables in his small garden in his spare time.
+
+---
+
+#### 2.2 To + Do (to is infinitive marker + base verb)
+1. **agree to do**
+
+   The two companies agreed to carry out long-term cooperation to develop new environmental protection products.
+2. **decide to do**
+
+   She decided to give up her busy city job and return to her hometown to run a small bookstore.
+3. **want to do**
+
+   Many young people want to explore the world and gain rich life experience while they are still young.
+4. **hope to do**
+
+   The whole team hopes to break the record and win the national championship in the upcoming competition.
+5. **wish to do**
+
+   The elderly couple wish to visit every famous scenic spot across the country in the next few years.
+6. **plan to do**
+
+   My family plans to travel to a quiet coastal town and spend the upcoming summer vacation there.
+7. **promise to do**
+
+   The young man promised to take good care of his sick grandmother after his parents went out to work.
+8. **refuse to do**
+
+   He refused to tell lies even though he was under great pressure from those around him.
+9. **offer to do**
+
+   Several warm-hearted volunteers offered to clean up the messy streets after the heavy rain stopped.
+10. **manage to do**
+
+    They managed to complete the difficult project ahead of schedule despite all kinds of unexpected difficulties.
+11. **pretend to do**
+
+    The lazy boy pretended to listen carefully in class while actually thinking about computer games.
+12. **prepare to do**
+
+    The rescue workers are fully preparing to set off for the disaster-stricken area at any time.
+13. **fail to do**
+
+    He failed to seize the precious opportunity because of his hesitation and lack of courage.
+14. **learn to do**
+
+    More and more modern parents encourage their kids to learn to solve practical problems independently.
+15. **choose to do**
+
+    Faced with different career paths, she chose to stick to her original dream of becoming a doctor.
+
+---
+
+### 3、Exercises
+#### 3.1
 1. He has become accustomed ____ the cold weather here.
 2. The cost will amount ____ about 5,000 yuan.
 3. The organization appealed ____ the public to help the poor.
@@ -72,7 +165,7 @@ sticky: 999
 27. You can turn ____ me if you need help.
 28. We will never yield ____ any pressure.
 
-#### 2.2
+#### 3.2
 1. 他已经习惯了这里的寒冷天气。
 2. 费用将达到大约5000元。
 3. 这个组织呼吁公众帮助穷人。
@@ -104,7 +197,7 @@ sticky: 999
 
 ---
 
-### Answers（2.1 填空答案）
+### Answers（3.1 填空答案）
 1. to
 2. to
 3. to
@@ -133,3 +226,4 @@ sticky: 999
 26. to
 27. to
 28. to
+
