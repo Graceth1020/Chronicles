@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    
+    <meta name="author" content="Graceth">
+    
+    <!-- Completely eliminate flash of wrong theme -->
+    <script>
+        (function() {
+            const THEME_KEY = "REDEFINE-THEME-STATUS";
+            const DARK = "dark", LIGHT = "light";
+            
+            // Get preferred theme
+            function getTheme() {
+                try {
+                    const saved = localStorage.getItem(THEME_KEY);
+                    if (saved) {
+                        const { isDark } = JSON.parse(saved);
+                        return isDark ? DARK : LIGHT;
+                    }
+                } catch (e) {}
+                
+                return matchMedia("(prefers-color-scheme: dark)").matches ? DARK : LIGHT;
+            }
+            
+            // Apply theme to document
+            function applyTheme(theme) {
+                const isDark = theme === DARK;
+                const root = document.documentElement;
+                
+                // Set classes for compatibility
+                root.classList.add(theme);
+                root.classList.remove(isDark ? LIGHT : DARK);
+                root.style.colorScheme = theme;
+            }
+            
+            // Initial application
+            const theme = getTheme();
+            applyTheme(theme);
+            
+            // Listen for system preference changes
+            matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
+                // Only update if using system preference (no localStorage entry)
+                if (!localStorage.getItem(THEME_KEY)) {
+                    applyTheme(matches ? DARK : LIGHT);
+                }
+            });
+            
+            // Set body classes ASAP (before DOMContentLoaded)
+            (function() {
+                const addBodyClass = () => {
+                    const b = document.body;
+                    if (!b) return false;
+                    b.classList.add(theme + "-mode");
+                    return true;
+                };
+
+                // Try immediately
+                if (addBodyClass()) return;
+
+                // Observe until body exists
+                const mo = new MutationObserver(() => {
+                    if (addBodyClass()) mo.disconnect();
+                });
+                mo.observe(document.documentElement, { childList: true, subtree: true });
+            })();
+        })();
+    </script>
+    
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://graceth1020.github.io/Chronicles/2026/06/04/preposition-adj-examination/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+        
+        <meta name="description" content="Graceth&#39;s Chronicles.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NCE-02 Preposition adj examination">
+<meta property="og:url" content="https://graceth1020.github.io/Chronicles/2026/06/04/preposition-adj-examination/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Graceth&#39;s Chronicles.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://graceth1020.github.io/images/redefine-og.webp">
+<meta property="article:published_time" content="2026-06-04T18:15:05.000Z">
+<meta property="article:modified_time" content="2026-06-04T10:17:17.858Z">
+<meta property="article:author" content="Graceth">
+<meta property="article:tag" content="English">
+<meta property="article:tag" content="NCE 02">
+<meta property="article:tag" content="Preposition">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://graceth1020.github.io/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Graceth1020/img-host@main/Chronicle/dog-icon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Graceth1020/img-host@main/Chronicle/dog-icon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Graceth1020/img-host@main/Chronicle/dog-icon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            NCE-02 Preposition adj examination | Graceth&#39;s Chronicles
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/Chronicles/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/Chronicles/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/Chronicles/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/Chronicles/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/Chronicles/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"graceth1020.github.io","root":"/Chronicles/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"side_tools":{"gear_rotation":true,"auto_expand":false},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Graceth's Chronicles."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Have a nice day.","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":[{"icon":"fa-brands fa-github","url":null},{"icon":"fa-brands fa-twitter","url":null},{"icon":"fa-solid fa-at","url":"you@example.com"},{"icon":"fa-brands fa-telegram","url":null},{"icon":"/images/custom-icon.svg","url":null}],"qrs":[{"icon":"fa-brands fa-weixin","qr":null},{"icon":"/images/custom-icon.svg","qr":null}]}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"11.4.1","theme":{"light":"default","dark":"dark"}}},"version":"2.9.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"cloud","masonry":{"batch_size":12,"initial_batch_size":24}},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footer":{"runtime":true,"icon":"<i class=\"fa-solid fa-heart fa-beat\" style=\"--fa-animation-duration: 0.5s; color: #f54545\"></i>","start":"2026/4/19 11:45:14","statistics":true,"customize":"Graceth's Chronicles documents Graceth's personal growth, serving as a blog-like chronicle of life, learning, and self-discovery.","icp":{"enable":false,"number":null,"url":null}},"footerStart":"2026/4/19 11:45:14","mermaid":{"style":{"light":"default","dark":"dark"}}};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.i18n = {"search":"Search...","toc":"On this page","prev":"Prev","next":"Next","prev_posts":"Prev posts","next_posts":"Next posts","page":"Page %d","recent_posts":"Recent Posts","share":"Share","powered_by":"POWERED BY %s","theme":"THEME","rss_feed":"RSS Feed","category":"Category","categories":"Categories","tag":"Tag","tags":"Tags","post":"Post","posts":"Posts","tagcloud":"Tag Cloud","comment":"Comment","comments":"Comments","home":"Home","archive":"Archive","archives":"Archives","top":"TOP","sticky":"Sticky","go-back-home":"Go Back Home","masonry_loading":"Loading photos...","image_viewer":"Image viewer","close":"Close","exif":{"title":"EXIF","cards":{"camera":"Camera","lens":"Lens","exposure":"Exposure","other":"Other"},"fields":{"make":"Brand","model":"Model","date_taken":"Date taken","lens_model":"Lens","focal_length":"Focal length","focus_mode":"Focus mode","shutter":"Shutter","aperture":"Aperture","iso":"ISO","exposure_program":"Exposure program","exposure_compensation":"Exposure compensation","metering_mode":"Metering mode","flash":"Flash","white_balance":"White balance","latitude":"Latitude","longitude":"Longitude","altitude":"Altitude"},"status":{"loading":"Loading...","no_exif":"No EXIF available","library_missing":"EXIF library not loaded","image_source_missing":"Image source unavailable","unavailable":"EXIF unavailable (blocked by CORS or missing metadata)","flag_unavailable":"EXIF unavailable"}},"about":"About","changelog":"Changelog","links":"Links","link":"Link","friends":"Friends","friend":"Friend","timeline":"Timeline","shuoshuo":"Shuoshuo","bookmarks":"Bookmarks","site_uv":"VISITOR COUNT","site_pv":"TOTAL PAGE VIEWS","read_more":"Read more","wordcount":"Words","min2read":"Mins","status":"Status","runtime":"Blog up for","days":"days","hours":"hrs","minutes":"Min","seconds":"Sec","optimized_by":"and Optimized by Evan","rights":"All Rights Reserved","site_posts":"%s posts in total","site_wordcount":"%s words in total","copyright":{"author":"Author","title":"Title","link":"Link","create_time":"Created at","update_time":"Updated at","license_title":"License","license_content":"This work is licensed under %s.","all_rights_reserved":"All Rights Reserved &#169; %s","public_domain":"This work is in the public domain."},"ago":{"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"},"create_time":"Created","update_time":"Updated","expired":"This post is written %s days ago, and the content may not be up to date."};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/Chronicles/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/Chronicles/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/Chronicles/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/Chronicles/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body>
+	<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+            <a class="logo-title" href="/Chronicles/">
+                
+                Graceth&#39;s Chronicles
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/Chronicles/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/Chronicles/tags/"
+                                        >
+                                    <i class="fa-solid fa-tags fa-fw"></i>
+                                    TAGS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/Chronicles/categories/"
+                                        >
+                                    <i class="fa-solid fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/Chronicles/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/Chronicles/tags/"
+                        >
+                            <span>
+                                TAGS
+                            </span>
+                            
+                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/Chronicles/categories/"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-solid fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Chronicles/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Chronicles/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Chronicles/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">31</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="https://evan.beee.top/img/redefine-1-final.webp" alt="NCE-02 Preposition adj examination" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">NCE-02 Preposition adj examination</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] shrink-0 rounded-medium border border-border-color p-px">
+				<img src="https://cdn.jsdelivr.net/gh/Graceth1020/img-host@main/Chronicle/head.jpeg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Graceth</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2026-06-04 18:15:05</span>
+        <span class="mobile">2026-06-04 18:15:05</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2026-06-04 10:17:17</span>
+            <span class="mobile">2026-06-04 10:17:17</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/Chronicles/tags/NCE-02/">NCE 02</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/Chronicles/tags/English/">English</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/Chronicles/tags/Preposition/">Preposition</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.7k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>17 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h3 id="📝-练习题（101个填空）"><a href="#📝-练习题（101个填空）" class="headerlink" title="📝 练习题（101个填空）"></a>📝 练习题（101个填空）</h3><hr>
+<h4 id="Section-1（第1-10题）"><a href="#Section-1（第1-10题）" class="headerlink" title="Section 1（第1-10题）"></a>Section 1（第1-10题）</h4><ol>
+<li><p>After months of training, she is finally qualified __ the national championship.</p>
+</li>
+<li><p>The old man was strangely familiar __ the village despite never having visited it before.</p>
+</li>
+<li><p>You should not be jealous __ your sister’s success; work harder instead.</p>
+</li>
+<li><p>This brand is famous __ producing high-quality leather goods.</p>
+</li>
+<li><p>The witness was reluctant __ provide more details because he felt threatened.</p>
+</li>
+<li><p>Fresh vegetables are sufficient __ meeting our daily nutritional needs.</p>
+</li>
+<li><p>He is rather weak __ mathematics, but his writing skills are exceptional.</p>
+</li>
+<li><p>I am deeply grateful __ my mentor for guiding me through graduate school.</p>
+</li>
+<li><p>The new software is fully consistent __ the existing operating system.</p>
+</li>
+<li><p>She remained ignorant __ the serious consequences of her actions until it was too late.</p>
+</li>
+</ol>
+<h5 id="✅-Section-1-答案（完整介词短语）"><a href="#✅-Section-1-答案（完整介词短语）" class="headerlink" title="✅ Section 1 答案（完整介词短语）"></a>✅ Section 1 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left"><strong>qualified for</strong></td>
+<td align="left">6</td>
+<td align="left"><strong>sufficient for</strong></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><strong>familiar with&#x2F;to</strong></td>
+<td align="left">7</td>
+<td align="left"><strong>weak in</strong></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><strong>jealous of</strong></td>
+<td align="left">8</td>
+<td align="left"><strong>grateful to</strong></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left"><strong>famous for</strong></td>
+<td align="left">9</td>
+<td align="left"><strong>consistent with</strong></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><strong>reluctant about&#x2F;to</strong></td>
+<td align="left">10</td>
+<td align="left"><strong>ignorant of</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-1-翻译"><a href="#🌏-Section-1-翻译" class="headerlink" title="🌏 Section 1 翻译"></a>🌏 Section 1 翻译</h5><ol>
+<li>经过几个月的训练，她终于有资格参加全国锦标赛了。</li>
+<li>那位老人对这个村庄有一种奇怪的熟悉感，尽管他从未去过。</li>
+<li>你不应该嫉妒你妹妹的成功；你应该更加努力。</li>
+<li>这个品牌以生产高品质皮具而闻名。</li>
+<li>证人因为感到受威胁而不愿意提供更多细节。</li>
+<li>新鲜蔬菜足以满足我们每日的营养需求。</li>
+<li>他数学相当薄弱，但写作能力很出色。</li>
+<li>我深深感激我的导师在研究生期间对我的指导。</li>
+<li>这款新软件与现有操作系统完全兼容。</li>
+<li>直到为时已晚，她仍然对自己行为的严重后果一无所知。</li>
+</ol>
+<hr>
+<h4 id="Section-2（第11-20题）"><a href="#Section-2（第11-20题）" class="headerlink" title="Section 2（第11-20题）"></a>Section 2（第11-20题）</h4><ol start="11">
+<li><p>The professor is very popular __ his students because of his humorous teaching style.</p>
+</li>
+<li><p>We need to find a solution that is acceptable __ all parties involved.</p>
+</li>
+<li><p>The little boy was curious __ how airplanes can stay in the sky for so long.</p>
+</li>
+<li><p>You are responsible __ ensuring that all tasks are completed by Friday.</p>
+</li>
+<li><p>The two samples are identical __ each other under microscopic examination.</p>
+</li>
+<li><p>He is intent __ finishing his novel before the end of the year.</p>
+</li>
+<li><p>My grandmother is not very efficient __ using modern smartphones.</p>
+</li>
+<li><p>The director was angry __ the actor for forgetting his lines repeatedly.</p>
+</li>
+<li><p>This historic building is situated south __ the main square.</p>
+</li>
+<li><p>She felt uneasy __ walking alone in the deserted neighborhood at night.</p>
+</li>
+</ol>
+<h5 id="✅-Section-2-答案（完整介词短语）"><a href="#✅-Section-2-答案（完整介词短语）" class="headerlink" title="✅ Section 2 答案（完整介词短语）"></a>✅ Section 2 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">11</td>
+<td align="left"><strong>popular with</strong></td>
+<td align="left">16</td>
+<td align="left"><strong>intent on</strong></td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left"><strong>acceptable to</strong></td>
+<td align="left">17</td>
+<td align="left"><strong>efficient at&#x2F;in</strong></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left"><strong>curious about</strong></td>
+<td align="left">18</td>
+<td align="left"><strong>angry with</strong></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left"><strong>responsible for</strong></td>
+<td align="left">19</td>
+<td align="left"><strong>south of</strong></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left"><strong>identical to</strong></td>
+<td align="left">20</td>
+<td align="left"><strong>uneasy about</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-2-翻译"><a href="#🌏-Section-2-翻译" class="headerlink" title="🌏 Section 2 翻译"></a>🌏 Section 2 翻译</h5><ol start="11">
+<li>这位教授因其幽默的教学风格在学生中很受欢迎。</li>
+<li>我们需要找到一个所有相关方都能接受的解决方案。</li>
+<li>小男孩对飞机如何能在空中停留这么久感到好奇。</li>
+<li>你负责确保所有任务在周五前完成。</li>
+<li>在显微镜检查下，这两个样本完全相同。</li>
+<li>他专心致志要在年底前完成他的小说。</li>
+<li>我祖母不太会使用现代智能手机。</li>
+<li>导演因为演员反复忘记台词而生气。</li>
+<li>这座历史建筑位于主广场以南。</li>
+<li>她对深夜独自走在荒芜的街区感到不安。</li>
+</ol>
+<hr>
+<h4 id="Section-3（第21-30题）"><a href="#Section-3（第21-30题）" class="headerlink" title="Section 3（第21-30题）"></a>Section 3（第21-30题）</h4><ol start="21">
+<li><p>His political views are contrary __ everything our party stands for.</p>
+</li>
+<li><p>The manager is busy __ preparing the annual report all week.</p>
+</li>
+<li><p>You should be careful __ your belongings when traveling through crowded stations.</p>
+</li>
+<li><p>The young athlete is keen __ pursuing a professional career in basketball.</p>
+</li>
+<li><p>The scientific community remains doubtful __ the authenticity of those experimental results.</p>
+</li>
+<li><p>This passport is valid __ five years from the date of issue.</p>
+</li>
+<li><p>Be patient __ the elderly; they need more time to express themselves.</p>
+</li>
+<li><p>The company is independent __ any government funding or support.</p>
+</li>
+<li><p>She was sad __ hearing that her childhood friend had moved away permanently.</p>
+</li>
+<li><p>The children were intent __ winning the competition, practicing day and night.</p>
+</li>
+</ol>
+<h5 id="✅-Section-3-答案（完整介词短语）"><a href="#✅-Section-3-答案（完整介词短语）" class="headerlink" title="✅ Section 3 答案（完整介词短语）"></a>✅ Section 3 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">21</td>
+<td align="left"><strong>contrary to</strong></td>
+<td align="left">26</td>
+<td align="left"><strong>valid for</strong></td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left"><strong>busy with&#x2F;at</strong></td>
+<td align="left">27</td>
+<td align="left"><strong>patient with</strong></td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left"><strong>careful of&#x2F;with</strong></td>
+<td align="left">28</td>
+<td align="left"><strong>independent of</strong></td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left"><strong>keen on</strong></td>
+<td align="left">29</td>
+<td align="left"><strong>sad about&#x2F;at</strong></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left"><strong>doubtful about&#x2F;of</strong></td>
+<td align="left">30</td>
+<td align="left"><strong>intent on</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-3-翻译"><a href="#🌏-Section-3-翻译" class="headerlink" title="🌏 Section 3 翻译"></a>🌏 Section 3 翻译</h5><ol start="21">
+<li>他的政治观点与我们党的主张完全相反。</li>
+<li>经理这整周都忙于准备年度报告。</li>
+<li>在拥挤的车站旅行时，你应该小心保管好自己的物品。</li>
+<li>这位年轻的运动员热衷于追求职业篮球生涯。</li>
+<li>科学界对这些实验结果的真实性仍持怀疑态度。</li>
+<li>这本护照自签发之日起有效期为五年。</li>
+<li>对老人要有耐心；他们需要更多时间来表达自己。</li>
+<li>这家公司不依赖任何政府资助或支持，保持独立。</li>
+<li>听到她的童年好友永久搬走的消息，她很难过。</li>
+<li>孩子们一心想要赢得比赛，日以继夜地练习。</li>
+</ol>
+<hr>
+<h4 id="Section-4（第31-40题）"><a href="#Section-4（第31-40题）" class="headerlink" title="Section 4（第31-40题）"></a>Section 4（第31-40题）</h4><ol start="31">
+<li><p>I am not entirely convinced __ his explanation for being late this morning.</p>
+</li>
+<li><p>This knife is primarily used __ cutting bread and soft fruits.</p>
+</li>
+<li><p>The team was fortunate __ having an experienced leader during the crisis.</p>
+</li>
+<li><p>He is completely unaware __ the danger that lies ahead.</p>
+</li>
+<li><p>Your actions are not consistent __ the values you claim to hold.</p>
+</li>
+<li><p>The tourists were curious __ the ancient ruins they had read about in guidebooks.</p>
+</li>
+<li><p>She is capable __ handling much more complex projects than this one.</p>
+</li>
+<li><p>The manager was polite __ everyone, regardless of their position in the company.</p>
+</li>
+<li><p>After the long journey, we were short __ drinking water and had to ration it.</p>
+</li>
+<li><p>He is guilty __ violating several traffic laws, according to the police report.</p>
+</li>
+</ol>
+<h5 id="✅-Section-4-答案（完整介词短语）"><a href="#✅-Section-4-答案（完整介词短语）" class="headerlink" title="✅ Section 4 答案（完整介词短语）"></a>✅ Section 4 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">31</td>
+<td align="left"><strong>convinced of</strong></td>
+<td align="left">36</td>
+<td align="left"><strong>curious about</strong></td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left"><strong>used for</strong></td>
+<td align="left">37</td>
+<td align="left"><strong>capable of</strong></td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left"><strong>fortunate in</strong></td>
+<td align="left">38</td>
+<td align="left"><strong>polite to</strong></td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left"><strong>unaware of</strong></td>
+<td align="left">39</td>
+<td align="left"><strong>short of</strong></td>
+</tr>
+<tr>
+<td align="left">35</td>
+<td align="left"><strong>consistent with</strong></td>
+<td align="left">40</td>
+<td align="left"><strong>guilty of</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-4-翻译"><a href="#🌏-Section-4-翻译" class="headerlink" title="🌏 Section 4 翻译"></a>🌏 Section 4 翻译</h5><ol start="31">
+<li>我并不完全相信他今天早上迟到的解释。</li>
+<li>这把刀主要用于切面包和软水果。</li>
+<li>团队很幸运在危机期间有一位经验丰富的领导者。</li>
+<li>他完全没有意识到前方的危险。</li>
+<li>你的行为与你所声称的价值观不一致。</li>
+<li>游客们对他们从旅游指南上读到的古老遗迹感到好奇。</li>
+<li>她有能力处理比这个复杂得多的项目。</li>
+<li>经理对每个人都很礼貌，无论他们在公司职位高低。</li>
+<li>长途旅行后，我们缺乏饮用水，不得不定量分配。</li>
+<li>根据警方报告，他违反了多条交通法规。</li>
+</ol>
+<hr>
+<h4 id="Section-5（第41-50题）"><a href="#Section-5（第41-50题）" class="headerlink" title="Section 5（第41-50题）"></a>Section 5（第41-50题）</h4><ol start="41">
+<li><p>The new intern is still new __ the industry and needs thorough training.</p>
+</li>
+<li><p>This area is famous __ its breathtaking sunsets and scenic hiking trails.</p>
+</li>
+<li><p>You are right __ believing that hard work pays off in the long run.</p>
+</li>
+<li><p>She is conscious __ her own weaknesses and works hard to overcome them.</p>
+</li>
+<li><p>The elderly woman is dependent __ her son for daily care and mobility.</p>
+</li>
+<li><p>I am sorry __ causing any misunderstanding during yesterday’s meeting.</p>
+</li>
+<li><p>The company is short __ experienced engineers, which slows down production.</p>
+</li>
+<li><p>He is fond __ playing classical piano in his spare time.</p>
+</li>
+<li><p>The solution is obvious __ anyone who has studied basic chemistry.</p>
+</li>
+<li><p>The two political parties are similar __ each other in many economic aspects.</p>
+</li>
+</ol>
+<h5 id="✅-Section-5-答案（完整介词短语）"><a href="#✅-Section-5-答案（完整介词短语）" class="headerlink" title="✅ Section 5 答案（完整介词短语）"></a>✅ Section 5 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">41</td>
+<td align="left"><strong>new to</strong></td>
+<td align="left">46</td>
+<td align="left"><strong>sorry for</strong></td>
+</tr>
+<tr>
+<td align="left">42</td>
+<td align="left"><strong>famous for</strong></td>
+<td align="left">47</td>
+<td align="left"><strong>short of</strong></td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left"><strong>right about&#x2F;in</strong></td>
+<td align="left">48</td>
+<td align="left"><strong>fond of</strong></td>
+</tr>
+<tr>
+<td align="left">44</td>
+<td align="left"><strong>conscious of</strong></td>
+<td align="left">49</td>
+<td align="left"><strong>obvious to</strong></td>
+</tr>
+<tr>
+<td align="left">45</td>
+<td align="left"><strong>dependent on</strong></td>
+<td align="left">50</td>
+<td align="left"><strong>similar to</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-5-翻译"><a href="#🌏-Section-5-翻译" class="headerlink" title="🌏 Section 5 翻译"></a>🌏 Section 5 翻译</h5><ol start="41">
+<li>新来的实习生还是这个行业的新手，需要全面培训。</li>
+<li>这个地区以其令人惊叹的日落和风景优美的徒步小径而闻名。</li>
+<li>你相信努力终有回报是正确的。</li>
+<li>她意识到自己的弱点，并努力克服它们。</li>
+<li>这位老妇人依赖儿子提供日常照护和出行帮助。</li>
+<li>我很抱歉在昨天的会议上造成了任何误解。</li>
+<li>公司缺乏经验丰富的工程师，这拖慢了生产进度。</li>
+<li>他喜欢在空闲时间弹古典钢琴。</li>
+<li>解决方案对任何学过基础化学的人来说是显而易见的。</li>
+<li>这两个政党在许多经济方面彼此相似。</li>
+</ol>
+<hr>
+<h4 id="Section-6（第51-60题）"><a href="#Section-6（第51-60题）" class="headerlink" title="Section 6（第51-60题）"></a>Section 6（第51-60题）</h4><ol start="51">
+<li><p>She is extremely sensitive __ criticism, so please be gentle with your feedback.</p>
+</li>
+<li><p>The teacher was patient __ the struggling student, explaining the concept multiple times.</p>
+</li>
+<li><p>This medicine is harmful __ your liver if taken in excessive amounts.</p>
+</li>
+<li><p>The president is accountable __ the people for his decisions and policies.</p>
+</li>
+<li><p>He is certain __ winning the election, according to the latest polls.</p>
+</li>
+<li><p>The witness was doubtful __ the suspect’s alibi from the very beginning.</p>
+</li>
+<li><p>You are qualified __ this position only if you have relevant work experience.</p>
+</li>
+<li><p>The manager is enthusiastic __ implementing new technologies in the workplace.</p>
+</li>
+<li><p>This decision could prove fatal __ the future of the entire organization.</p>
+</li>
+<li><p>He is envious __ his neighbor’s luxurious lifestyle and expensive car.</p>
+</li>
+</ol>
+<h5 id="✅-Section-6-答案（完整介词短语）"><a href="#✅-Section-6-答案（完整介词短语）" class="headerlink" title="✅ Section 6 答案（完整介词短语）"></a>✅ Section 6 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">51</td>
+<td align="left"><strong>sensitive to</strong></td>
+<td align="left">56</td>
+<td align="left"><strong>doubtful about&#x2F;of</strong></td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left"><strong>patient with</strong></td>
+<td align="left">57</td>
+<td align="left"><strong>qualified for&#x2F;in</strong></td>
+</tr>
+<tr>
+<td align="left">53</td>
+<td align="left"><strong>harmful to</strong></td>
+<td align="left">58</td>
+<td align="left"><strong>enthusiastic about</strong></td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left"><strong>accountable for</strong></td>
+<td align="left">59</td>
+<td align="left"><strong>fatal to</strong></td>
+</tr>
+<tr>
+<td align="left">55</td>
+<td align="left"><strong>certain of</strong></td>
+<td align="left">60</td>
+<td align="left"><strong>envious of</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-6-翻译"><a href="#🌏-Section-6-翻译" class="headerlink" title="🌏 Section 6 翻译"></a>🌏 Section 6 翻译</h5><ol start="51">
+<li>她对批评极其敏感，所以请温和地提出反馈。</li>
+<li>老师对那个学习困难的学生很有耐心，多次解释那个概念。</li>
+<li>过量服用此药会对你的肝脏有害。</li>
+<li>总统要为自己的决策和政策对人民负责。</li>
+<li>根据最新民调，他确信自己会赢得选举。</li>
+<li>目击者从一开始就怀疑嫌疑人的不在场证明。</li>
+<li>只有拥有相关工作经验，你才有资格担任这个职位。</li>
+<li>经理热衷于在工作场所推行新技术。</li>
+<li>这个决定可能对整个组织的未来是致命的。</li>
+<li>他羡慕邻居奢华的生活方式和昂贵的汽车。</li>
+</ol>
+<hr>
+<h4 id="Section-7（第61-70题）"><a href="#Section-7（第61-70题）" class="headerlink" title="Section 7（第61-70题）"></a>Section 7（第61-70题）</h4><ol start="61">
+<li><p>The old house is situated north __ the river, hidden among the trees.</p>
+</li>
+<li><p>The student was quick __ understanding the complex mathematical concept.</p>
+</li>
+<li><p>You should be aware __ the potential risks before investing your money.</p>
+</li>
+<li><p>She is faithful __ her principles regardless of the circumstances.</p>
+</li>
+<li><p>The two theories are different __ each other in fundamental ways.</p>
+</li>
+<li><p>He is honest __ his business dealings, which earned him a solid reputation.</p>
+</li>
+<li><p>The child is afraid __ the dark and always sleeps with a nightlight.</p>
+</li>
+<li><p>I am grateful __ having such supportive colleagues during challenging times.</p>
+</li>
+<li><p>The hotel is far __ the city center, so renting a car is necessary.</p>
+</li>
+<li><p>You are rude __ interrupt others while they are speaking, you know.</p>
+</li>
+</ol>
+<h5 id="✅-Section-7-答案（完整介词短语）"><a href="#✅-Section-7-答案（完整介词短语）" class="headerlink" title="✅ Section 7 答案（完整介词短语）"></a>✅ Section 7 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">61</td>
+<td align="left"><strong>north of</strong></td>
+<td align="left">66</td>
+<td align="left"><strong>honest in</strong></td>
+</tr>
+<tr>
+<td align="left">62</td>
+<td align="left"><strong>quick at</strong></td>
+<td align="left">67</td>
+<td align="left"><strong>afraid of</strong></td>
+</tr>
+<tr>
+<td align="left">63</td>
+<td align="left"><strong>aware of</strong></td>
+<td align="left">68</td>
+<td align="left"><strong>grateful to</strong></td>
+</tr>
+<tr>
+<td align="left">64</td>
+<td align="left"><strong>faithful to</strong></td>
+<td align="left">69</td>
+<td align="left"><strong>far from</strong></td>
+</tr>
+<tr>
+<td align="left">65</td>
+<td align="left"><strong>different from</strong></td>
+<td align="left">70</td>
+<td align="left"><strong>rude to</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-7-翻译"><a href="#🌏-Section-7-翻译" class="headerlink" title="🌏 Section 7 翻译"></a>🌏 Section 7 翻译</h5><ol start="61">
+<li>老房子位于河北岸，隐藏在树林之中。</li>
+<li>那个学生很快理解了这个复杂的数学概念。</li>
+<li>在投资之前，你应该意识到潜在的风险。</li>
+<li>无论环境如何，她都忠于自己的原则。</li>
+<li>这两种理论在根本上是不同的。</li>
+<li>他做生意诚实，这为他赢得了良好的声誉。</li>
+<li>孩子害怕黑暗，总是开着夜灯睡觉。</li>
+<li>我很感激在困难时期有如此支持我的同事。</li>
+<li>酒店远离市中心，所以租车是必要的。</li>
+<li>别人说话时打断别人是很粗鲁的，你知道吗？</li>
+</ol>
+<hr>
+<h4 id="Section-8（第71-80题）"><a href="#Section-8（第71-80题）" class="headerlink" title="Section 8（第71-80题）"></a>Section 8（第71-80题）</h4><ol start="71">
+<li><p>The athlete is capable __ breaking the world record if conditions are favorable.</p>
+</li>
+<li><p>She is indifferent __ criticism; she simply continues doing her work.</p>
+</li>
+<li><p>The recipe is different __ the traditional version, using fewer spices.</p>
+</li>
+<li><p>He is dear __ me, and I would do anything to help him.</p>
+</li>
+<li><p>The professor is expert __ analyzing ancient manuscripts and historical texts.</p>
+</li>
+<li><p>The child was quick __ learning new languages at a very young age.</p>
+</li>
+<li><p>I am certain __ having locked the door before leaving the apartment.</p>
+</li>
+<li><p>The manager is responsible __ training all new employees in the department.</p>
+</li>
+<li><p>The witness was reluctant __ cooperating with the investigation due to fear.</p>
+</li>
+<li><p>This path is safe __ wild animals, so you can hike without worry.</p>
+</li>
+</ol>
+<h5 id="✅-Section-8-答案（完整介词短语）"><a href="#✅-Section-8-答案（完整介词短语）" class="headerlink" title="✅ Section 8 答案（完整介词短语）"></a>✅ Section 8 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">71</td>
+<td align="left"><strong>capable of</strong></td>
+<td align="left">76</td>
+<td align="left"><strong>quick at</strong></td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left"><strong>indifferent to</strong></td>
+<td align="left">77</td>
+<td align="left"><strong>certain of</strong></td>
+</tr>
+<tr>
+<td align="left">73</td>
+<td align="left"><strong>different from</strong></td>
+<td align="left">78</td>
+<td align="left"><strong>responsible for</strong></td>
+</tr>
+<tr>
+<td align="left">74</td>
+<td align="left"><strong>dear to</strong></td>
+<td align="left">79</td>
+<td align="left"><strong>reluctant about&#x2F;to</strong></td>
+</tr>
+<tr>
+<td align="left">75</td>
+<td align="left"><strong>expert at&#x2F;in</strong></td>
+<td align="left">80</td>
+<td align="left"><strong>safe from</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-8-翻译"><a href="#🌏-Section-8-翻译" class="headerlink" title="🌏 Section 8 翻译"></a>🌏 Section 8 翻译</h5><ol start="71">
+<li>如果条件有利，这位运动员有能力打破世界纪录。</li>
+<li>她对批评无动于衷；只是继续做她的工作。</li>
+<li>这个食谱与传统版本不同，用了更少的香料。</li>
+<li>他对我来说很重要，我愿意做任何事帮助他。</li>
+<li>这位教授擅长分析古代手稿和历史文献。</li>
+<li>那个孩子很小的时候就很快学会了新语言。</li>
+<li>我确信离开公寓前锁了门。</li>
+<li>经理负责培训部门内所有新员工。</li>
+<li>由于害怕，证人不愿意配合调查。</li>
+<li>这条小路没有野生动物出没，所以你可以放心徒步。</li>
+</ol>
+<hr>
+<h4 id="Section-9（第81-90题）"><a href="#Section-9（第81-90题）" class="headerlink" title="Section 9（第81-90题）"></a>Section 9（第81-90题）</h4><ol start="81">
+<li><p>The team is deficient __ experienced players, which explains their poor performance.</p>
+</li>
+<li><p>She is skillful __ negotiating complex business deals under pressure.</p>
+</li>
+<li><p>The young man is keen __ photography and spends hours taking pictures.</p>
+</li>
+<li><p>The information is identical __ what we received from the other source.</p>
+</li>
+<li><p>He is guilty __ making false promises during the election campaign.</p>
+</li>
+<li><p>The professor is conscious __ the difficulties his students are facing.</p>
+</li>
+<li><p>This region is rich in resources but deficient __ fresh water.</p>
+</li>
+<li><p>She is jealous __ her colleague’s rapid promotion and higher salary.</p>
+</li>
+<li><p>The plan is feasible only if we are lucky __ getting government approval.</p>
+</li>
+<li><p>The new employee is slow __ adapting to the company’s fast-paced environment.</p>
+</li>
+</ol>
+<h5 id="✅-Section-9-答案（完整介词短语）"><a href="#✅-Section-9-答案（完整介词短语）" class="headerlink" title="✅ Section 9 答案（完整介词短语）"></a>✅ Section 9 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">81</td>
+<td align="left"><strong>deficient in</strong></td>
+<td align="left">86</td>
+<td align="left"><strong>conscious of</strong></td>
+</tr>
+<tr>
+<td align="left">82</td>
+<td align="left"><strong>skillful at&#x2F;in</strong></td>
+<td align="left">87</td>
+<td align="left"><strong>deficient in</strong></td>
+</tr>
+<tr>
+<td align="left">83</td>
+<td align="left"><strong>keen on</strong></td>
+<td align="left">88</td>
+<td align="left"><strong>jealous of</strong></td>
+</tr>
+<tr>
+<td align="left">84</td>
+<td align="left"><strong>identical to</strong></td>
+<td align="left">89</td>
+<td align="left"><strong>lucky in</strong></td>
+</tr>
+<tr>
+<td align="left">85</td>
+<td align="left"><strong>guilty of</strong></td>
+<td align="left">90</td>
+<td align="left"><strong>slow at</strong></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-9-翻译"><a href="#🌏-Section-9-翻译" class="headerlink" title="🌏 Section 9 翻译"></a>🌏 Section 9 翻译</h5><ol start="81">
+<li>球队缺乏经验丰富的球员，这解释了他们的糟糕表现。</li>
+<li>她擅长在压力下谈判复杂的商业交易。</li>
+<li>这位年轻人热爱摄影，花很多时间拍照。</li>
+<li>这些信息与我们从另一个来源收到的完全相同。</li>
+<li>他犯有在竞选期间做出虚假承诺的罪行。</li>
+<li>教授意识到他的学生们正在面临的困难。</li>
+<li>这个地区资源丰富，但缺乏淡水。</li>
+<li>她嫉妒同事的快速晋升和更高的薪水。</li>
+<li>只有我们幸运地获得政府批准，这个计划才可行。</li>
+<li>新员工适应公司快节奏环境的速度很慢。</li>
+</ol>
+<hr>
+<h4 id="Section-10（第91-101题）"><a href="#Section-10（第91-101题）" class="headerlink" title="Section 10（第91-101题）"></a>Section 10（第91-101题）</h4><ol start="91">
+<li><p>The teacher is kind __ all students, regardless of their academic performance.</p>
+</li>
+<li><p>He is confident __ his ability to lead the team through this difficult period.</p>
+</li>
+<li><p>The driver was guilty __ running the red light, according to the traffic camera.</p>
+</li>
+<li><p>She is shy __ expressing her true feelings in front of large audiences.</p>
+</li>
+<li><p>The manager is content __ the current progress and sees no need for changes.</p>
+</li>
+<li><p>He is weak __ remembering names, which sometimes causes awkward situations.</p>
+</li>
+<li><p>The company remains independent __ external investors and makes its own decisions.</p>
+</li>
+<li><p>She is worried __ her son’s health after he caught a severe cold.</p>
+</li>
+<li><p>The scientist is doubtful __ the validity of the newly published research.</p>
+</li>
+<li><p>This decision is crucial __ the success of the entire project.</p>
+</li>
+<li><p>The students are eager __ starting their summer vacation after exhausting exams.</p>
+</li>
+</ol>
+<h5 id="✅-Section-10-答案（完整介词短语）"><a href="#✅-Section-10-答案（完整介词短语）" class="headerlink" title="✅ Section 10 答案（完整介词短语）"></a>✅ Section 10 答案（完整介词短语）</h5><table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+<th align="left">No.</th>
+<th align="left">Answer (完整短语)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">91</td>
+<td align="left"><strong>kind to&#x2F;of</strong></td>
+<td align="left">97</td>
+<td align="left"><strong>independent of</strong></td>
+</tr>
+<tr>
+<td align="left">92</td>
+<td align="left"><strong>confident of</strong></td>
+<td align="left">98</td>
+<td align="left"><strong>worried about</strong></td>
+</tr>
+<tr>
+<td align="left">93</td>
+<td align="left"><strong>guilty of</strong></td>
+<td align="left">99</td>
+<td align="left"><strong>doubtful about&#x2F;of</strong></td>
+</tr>
+<tr>
+<td align="left">94</td>
+<td align="left"><strong>shy of</strong></td>
+<td align="left">100</td>
+<td align="left"><strong>crucial to</strong></td>
+</tr>
+<tr>
+<td align="left">95</td>
+<td align="left"><strong>content with</strong></td>
+<td align="left">101</td>
+<td align="left"><strong>eager for</strong></td>
+</tr>
+<tr>
+<td align="left">96</td>
+<td align="left"><strong>weak in</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h5 id="🌏-Section-10-翻译"><a href="#🌏-Section-10-翻译" class="headerlink" title="🌏 Section 10 翻译"></a>🌏 Section 10 翻译</h5><ol start="91">
+<li>老师对所有的学生都和蔼可亲，不管他们的学习成绩如何。</li>
+<li>他对自己带领团队度过这个困难时期的能力充满信心。</li>
+<li>根据交通摄像头显示，司机犯有闯红灯的罪行。</li>
+<li>她羞于在众多观众面前表达自己的真实感受。</li>
+<li>经理对目前的进展感到满意，认为不需要改变。</li>
+<li>他不擅长记名字，这有时会造成尴尬的情况。</li>
+<li>公司保持独立于外部投资者，自己做决定。</li>
+<li>儿子重感冒后，她担心他的健康。</li>
+<li>科学家对这项新发表的研究的有效性表示怀疑。</li>
+<li>这个决定对整个项目的成功至关重要。</li>
+<li>经过疲惫的考试，学生们渴望开始他们的暑假。</li>
+</ol>
+<hr>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> NCE-02 Preposition adj examination</li>
+        <li><strong>Author:</strong> Graceth</li>
+        <li><strong>Created at
+                :</strong> 2026-06-04 18:15:05</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2026-06-04 10:17:17
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://graceth1020.github.io/Chronicles/2026/06/04/preposition-adj-examination/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/Chronicles/tags/NCE-02/">#NCE 02</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/Chronicles/tags/English/">#English</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/Chronicles/tags/Preposition/">#Preposition</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/Chronicles/2026/06/03/NCE-02-Verb_With_Practice/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">NCE-02 Verb &#39;With&#39; Practice</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">NCE-02 Preposition adj examination</div>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%9D-%E7%BB%83%E4%B9%A0%E9%A2%98%EF%BC%88101%E4%B8%AA%E5%A1%AB%E7%A9%BA%EF%BC%89"><span class="nav-text">📝 练习题（101个填空）</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+            <div class="customize-info my-1">Graceth's Chronicles documents Graceth's personal growth, serving as a blog-like chronicle of life, learning, and self-discovery.</div>
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2026</span>
+              -
+            
+            2026&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/Chronicles/">Graceth</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        31 posts in total
+                    </span>
+                    
+                        <span>
+                            23.9k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.9.0</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container" role="dialog" aria-modal="true" aria-label="Image viewer">
+	<button class="image-viewer-close" type="button" aria-label="Close">
+		<i class="fa-solid fa-xmark"></i>
+	</button>
+	<button class="image-viewer-prev" type="button" aria-label="Prev">
+		<i class="fa-solid fa-chevron-left"></i>
+	</button>
+	<div class="image-viewer-frame">
+		<img src="" alt="">
+	</div>
+	<div class="image-viewer-exif-panel hidden absolute left-1/2 bottom-20 -translate-x-1/2 w-[min(92vw,420px)] max-h-[60vh] overflow-hidden rounded-2xl bg-background-color-transparent-80 p-4 text-left shadow-redefine-flat backdrop-blur-md" role="dialog" aria-label="EXIF" aria-hidden="true">
+		<div class="flex items-center justify-between mb-3">
+			<span class="text-sm font-semibold text-first-text-color">EXIF</span>
+			<button class="image-viewer-exif-close flex h-8 w-8 items-center justify-center rounded-full bg-background-color-transparent-80 text-first-text-color transition hover:bg-background-color-transparent-40" type="button" aria-label="Close">
+				<i class="fa-solid fa-xmark text-[0.65rem]"></i>
+			</button>
+		</div>
+		<div class="image-viewer-exif-cards grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[50vh] overflow-y-auto pr-1 scrollbar-hide"></div>
+		<template class="image-viewer-exif-card-template">
+			<div class="rounded-lg bg-background-color-transparent-40 px-3 py-2">
+				<div class="image-viewer-exif-card-header flex items-center gap-2 mb-1">
+					<i class="image-viewer-exif-card-icon fa-solid fa-circle-info text-xs text-third-text-color"></i>
+					<div class="image-viewer-exif-card-title text-xs font-semibold text-first-text-color"></div>
+				</div>
+				<div class="image-viewer-exif-card-items flex flex-col gap-1"></div>
+			</div>
+		</template>
+	</div>
+	<button class="image-viewer-exif-toggle flex items-center gap-2 hidden absolute left-1/2 bottom-6 -translate-x-1/2 rounded-full border border-border-color bg-background-color-transparent-80 px-4 py-2 text-first-text-color backdrop-blur-md transition hover:bg-background-color-transparent-40" type="button" aria-label="EXIF" aria-expanded="false">
+		<i class="fa-solid fa-circle-info text-xs"></i>
+		<span class="text-xs font-semibold uppercase tracking-wider">EXIF</span>
+	</button>
+	<button class="image-viewer-next" type="button" aria-label="Next">
+		<i class="fa-solid fa-chevron-right"></i>
+	</button>
+</div>
+
+
+	
+
+</main>
+
+
+
+<script src="/Chronicles/js/build/libs/Swup.min.js"></script>
+
+<script src="/Chronicles/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/Chronicles/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/Chronicles/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/Chronicles/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/Chronicles/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    window.swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+
+    window.dispatchEvent(
+        new CustomEvent("redefine:swup:ready", {
+            detail: {
+                swup: window.swup,
+            },
+        }),
+    );
+</script>
+
+
+
+
+	
+<script src="/Chronicles/js/build/main.js" type="module"></script>
+
+
+
+    
+<script src="/Chronicles/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/Chronicles/assets/odometer-theme-minimal.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/Chronicles/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+
+	
+</body>
+
+</html>
