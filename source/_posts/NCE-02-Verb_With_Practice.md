@@ -9,8 +9,8 @@ thumbnail: https://evan.beee.top/img/redefine-1-final.webp
 sticky: 999
 ---
 
-# Verbs + with｜多时态复杂例句 + 填空习题 + 答案
-## 一、Examples（时态穿插：现完/过去/将来/进行时）
+# Verbs + with
+## 一、Examples
 1. **agree with 同意（观点/人）**
    Most experts agree with the new theory that researchers have put forward in recent years.
 2. **begin with 以……开始**

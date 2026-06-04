@@ -10,7 +10,7 @@ sticky: 999
 ---
 
 # Verbs collocated with at
-## 1. Examples (complex sentences, varied tenses)
+## 1. Examples 
 - **amused at/by** (对……感到有趣)
   We were greatly amused at the funny stories that the old coach told during the break.
 - **arrive at/in** (到达)
